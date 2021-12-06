@@ -376,7 +376,7 @@ function demo() {
   k.style.display = "inline-block";
   x.src = "kerala.jpg";
   y.src = "Himachal.jpg";
-  z.src = "Delhi.jpg";
+  z.src = "delhi.jpg";
   a.innerHTML =
     "KERALA:-The tranquil beauty of Kerala has helped it to be named as one of the ‘10 paradises of the world’ and one of the 50 must see destinations of a lifetime by the National Geographic's Traveller magazine. Kerala, the state also offers exotic beaches, lush hill-stations, spectacular waterfalls, wilderness to explore, many sanctuaries, ancient ports, and greenery everywhere. The state is known for its hospitality and if you are currently in search of your next travel destination here is the one calling you. Get ready to explore the tranquil beauty through Kerala Holidays.";
   b.innerHTML =
