@@ -61,6 +61,50 @@
     "to_time": "15:55"
   },
   {
+    "from": "Delhi, India",
+    "to": "Kolkata, India",
+    "date": "2021-12-09",
+    "trainClass": "Third AC",
+    "trainName": "BKN HWH SF EXP",
+    "price": "&#8377; 1700",
+    "status": "AVL 4",
+    "from_time": "13:59",
+    "to_time": "16:50"
+  },
+  {
+    "from": "Mumbai, India",
+    "to": "Pune, India",
+    "date": "2021-12-08",
+    "trainClass": "Second AC",
+    "trainName": "PNVL NED EXP",
+    "price": "&#8377; 645",
+    "status": "WL 67",
+    "from_time": "16:00",
+    "to_time": "19:25"
+  },
+  {
+    "from": "Bangalore, India",
+    "to": "Hyderabad, India",
+    "date": "2021-12-08",
+    "trainClass": "Second AC",
+    "trainName": "SAMPARK KRANTI",
+    "price": "&#8377; 2020",
+    "status": "AVL 39",
+    "from_time": "12:45",
+    "to_time": "08:10"
+  },
+  {
+    "from": "Kolkata, India",
+    "to": "Delhi, India",
+    "date": "2021-12-10",
+    "trainClass": "Sleeper Class",
+    "trainName": "NETAJI EXPRESS",
+    "price": "&#8377; 575",
+    "status": "Wl 138",
+    "from_time": "21:55",
+    "to_time": "21:24"
+  },
+  {
     "city": "Delhi, India",
     "checkin": "2021-12-07",
     "checkout": "2021-12-09",
@@ -69,6 +113,46 @@
     "hotelBreakfast": "at",
     "originalPrice": "&#8377; 9,350",
     "discountPrice": "&#8377; 5,500"
+  },
+  {
+    "city": "Mumbai, India",
+    "checkin": "2021-12-07",
+    "checkout": "2021-12-08",
+    "hotelName": "The Leela, Mumbai",
+    "hotelAddress": "Near Mumbai Airport",
+    "hotelBreakfast": "without",
+    "originalPrice": "&#8377; 12,034",
+    "discountPrice": "&#8377; 9,775"
+  },
+  {
+    "city": "Chandigarh, India",
+    "checkin": "2021-12-08",
+    "checkout": "2021-12-10",
+    "hotelName": "Hotel Sun Park",
+    "hotelAddress": "10km from Chandigarh",
+    "hotelBreakfast": "at",
+    "originalPrice": "&#8377; 5,999",
+    "discountPrice": "&#8377; 1,499"
+  },
+  {
+    "city": "Chandigarh, India",
+    "checkin": "2021-12-07",
+    "checkout": "2021-12-10",
+    "hotelName": "Hotel Sapphire",
+    "hotelAddress": "5km from Chandigah",
+    "hotelBreakfast": "without",
+    "originalPrice": "&#8377; 2,800",
+    "discountPrice": "&#8377; 1,773"
+  },
+  {
+    "city": "Kolkata, India",
+    "checkin": "2021-12-07",
+    "checkout": "2021-12-10",
+    "hotelName": "Regenta Orko's Kolkata",
+    "hotelAddress": "680m from Acropolis Mall",
+    "hotelBreakfast": "at",
+    "originalPrice": "&#8377; 3,499",
+    "discountPrice": "&#8377; 2,870"
   },
   {
     "from": "Mumbai, India",
@@ -81,5 +165,53 @@
     "price": "&#8377; 272",
     "from_time": "20:10",
     "to_time": "22:15"
+  },
+  {
+    "from": "Bangalore, India",
+    "to": "Hyderabad, India",
+    "date": "2021-12-07",
+    "busProvider": "Sri Krishna Travels",
+    "rating": "4.7",
+    "busName": "Volvo Multi-Axle A/C Semi Sleeper",
+    "busSeats": "34",
+    "price": "&#8377; 850",
+    "from_time": "22:50",
+    "to_time": "07:05"
+  },
+  {
+    "from": "Bangalore, India",
+    "to": "Hyderabad, India",
+    "date": "2021-12-07",
+    "busProvider": "Intercity Travels",
+    "rating": "4.6",
+    "busName": "Bharat Benz A/C Sleeper",
+    "busSeats": "15",
+    "price": "&#8377; 1,400",
+    "from_time": "22:15",
+    "to_time": "06:30"
+  },
+  {
+    "from": "Delhi, India",
+    "to": "Dehradun, India",
+    "date": "2021-12-08",
+    "busProvider": "Laxmi holidays",
+    "rating": "4.3",
+    "busName": "Bharat Benz A/C Sleeper",
+    "busSeats": "39",
+    "price": "&#8377; 569",
+    "from_time": "23:00",
+    "to_time": "05:00"
+  },
+  {
+    "from": "Mumbai, India",
+    "to": "Pune, India",
+    "date": "2021-12-08",
+    "busProvider": "Intercity Smartbus",
+    "rating": "4.9",
+    "busName": "A/C Sleeper",
+    "busSeats": "27",
+    "price": "&#8377; 1,152",
+    "from_time": "17:45",
+    "to_time": "21:10"
   }
 ]
