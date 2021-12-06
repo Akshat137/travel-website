@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><img src="logo.png" style="width: 70px; height: 58.5px" /></li>
+        <li>
+          <a class="active" href="#homediv" id="home">Home</a>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#themeHeading" id="explore">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#aboutdiv" id="about">About</a></li>
+      </ul>
+    </nav>
+    <div id="homediv">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="ice.jpg" style="width: 100%" />
+          <div class="text">ICELAND</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="193550.jpg" style="width: 100%" />
+          <div class="text">NORWAY</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="paris.jpg" id="paris" />
+          <div class="text">PARIS</div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <div id="container">
+      <div id="search">
+        <div id="travel-options">
+          <ul id="travel-options-list">
+            <li>
+              <button
+                type="button"
+                onclick="displayAeroplane()"
+                id="btn-aeroplane"
+              >
+                <img
+                  id="aeroplane"
+                  src="blue-aeroplane.jpg"
+                  alt="Aeroplane"
+                  width="50px"
+                  height="50px"
+                /></button
+              ><span>FLIGHTS</span>
+            </li>
+            <li>
+              <button type="button" onclick="displayHotels()" id="btn-hotel">
+                <img
+                  id="hotel"
+                  src="hotel.jpg"
+                  alt="Hotels"
+                  width="50px"
+                  height="50px"
+                /></button
+              ><span>HOTELS</span>
+            </li>
+            <li>
+              <button type="button" onclick="displayBus()" id="btn-bus">
+                <img
+                  id="bus"
+                  src="bus.jpg"
+                  alt="Bus"
+                  width="50px"
+                  height="50px"
+                /></button
+              ><span>BUS</span>
+            </li>
+            <li>
+              <button type="button" onclick="displayTrain()" id="btn-train">
+                <img
+                  id="train"
+                  src="train.png"
+                  alt="Train"
+                  width="50px"
+                  height="50px"
+                /></button
+              ><span>TRAIN</span>
+            </li>
+          </ul>
+        </div>
+        <div id="travel-search-options">
+          <span id="from">
+            <p class="heading">FROM</p>
+            <select id="places-from">
+              <option>Bangalore, India</option>
+              <option>Chennai, India</option>
+              <option>Dehradun, India</option>
+              <option>Delhi, India</option>
+              <option>Hyderabad, India</option>
+              <option>Kolkata, India</option>
+              <option>Mumbai, India</option>
+              <option>Pune, India</option>
+            </select>
+            <p id="from-station"></p>
+          </span>
+          <span id="to">
+            <p class="heading">TO</p>
+            <select id="places-to">
+              <option>Bangalore, India</option>
+              <option>Chennai, India</option>
+              <option>Dehradun, India</option>
+              <option selected>Delhi, India</option>
+              <option>Hyderabad, India</option>
+              <option>Kolkata, India</option>
+              <option>Mumbai, India</option>
+              <option>Pune, India</option>
+            </select>
+            <p id="to-station"></p>
+          </span>
+          <span id="city">
+            <p class="heading">CITY</p>
+            <select id="hotels-places-from">
+              <option>Bangalore, India</option>
+              <option>Chennai, India</option>
+              <option>Dehradun, India</option>
+              <option>Delhi, India</option>
+              <option>Hyderabad, India</option>
+              <option>Kolkata, India</option>
+              <option>Mumbai, India</option>
+              <option>Pune, India</option>
+            </select>
+          </span>
+          <span id="departure">
+            <p class="heading" id="departureHeading">DEPARTURE</p>
+            <input type="date" id="departure-date" />
+          </span>
+          <span id="checkIn">
+            <p class="heading" id="checkInHeading">CHECK IN</p>
+            <input type="date" id="checkInDate" />
+          </span>
+          <span id="checkOut">
+            <p class="heading" id="checkOutHeading">CHECK OUT</p>
+            <input type="date" id="checkOutDate" />
+          </span>
+          <span id="travelers">
+            <p class="heading" id="travelerHeading">TRAVELLERS</p>
+            <span id="adult-count">
+              <p class="sub-heading">Adults (12y+)</p>
+              <div class="passengers">
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-1"
+                  value="1"
+                  checked
+                />
+                <label for="adult-1">1</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-2"
+                  value="2"
+                />
+                <label for="adult-2">2</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-3"
+                  value="3"
+                />
+                <label for="adult-3">3</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-4"
+                  value="4"
+                />
+                <label for="adult-4">4</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-5"
+                  value="5"
+                />
+                <label for="adult-5">5</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-6"
+                  value="6"
+                />
+                <label for="adult-6">6</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-7"
+                  value="7"
+                />
+                <label for="adult-7">7</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-8"
+                  value="8"
+                />
+                <label for="adult-8">8</label>
+                <input
+                  type="radio"
+                  name="total-adults"
+                  id="adult-9"
+                  value="9"
+                />
+                <label for="adult-9">9</label>
+              </div>
+            </span>
+            <span id="child-count">
+              <p class="sub-heading">Children (2y - 12y)</p>
+              <div class="passengers">
+                <input
+                  type="radio"
+                  name="total-child"
+                  id="child-0"
+                  value="0"
+                  checked
+                />
+                <label for="child-0">0</label>
+                <input type="radio" name="total-child" id="child-1" value="1" />
+                <label for="child-1">1</label>
+                <input type="radio" name="total-child" id="child-2" value="2" />
+                <label for="child-2">2</label>
+                <input type="radio" name="total-child" id="child-3" value="3" />
+                <label for="child-3">3</label>
+                <input type="radio" name="total-child" id="child-4" value="4" />
+                <label for="child-4">4</label>
+                <input type="radio" name="total-child" id="child-5" value="5" />
+                <label for="child-5">5</label>
+                <input type="radio" name="total-child" id="child-6" value="6" />
+                <label for="child-6">6</label>
+              </div>
+            </span>
+            <span id="infants-count">
+              <p class="sub-heading">Infants (below 2y)</p>
+              <div class="passengers">
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="infants-0"
+                  value="0"
+                  checked
+                />
+                <label for="infants-0">0</label>
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="infants-1"
+                  value="1"
+                />
+                <label for="infants-1">1</label>
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="infants-2"
+                  value="2"
+                />
+                <label for="infants-2">2</label>
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="infants-3"
+                  value="3"
+                />
+                <label for="infants-3">3</label>
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="infants-4"
+                  value="4"
+                />
+                <label for="infants-4">4</label>
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="infants-5"
+                  value="5"
+                />
+                <label for="infants-5">5</label>
+                <input
+                  type="radio"
+                  name="total-infants"
+                  id="cinfants-6"
+                  value="6"
+                />
+                <label for="infants-6">6</label>
+              </div>
+            </span>
+          </span>
+          <span id="travel-class">
+            <p class="heading">CLASS</p>
+            <section id="aeroplane-class">
+              <input
+                type="radio"
+                id="Economy"
+                name="aeroplaneClass"
+                value="Economy"
+                checked
+              />
+              <label for="Economy">Economy</label>
+              <input
+                type="radio"
+                id="Premium-Economy"
+                name="aeroplaneClass"
+                value="Premium Economy"
+              />
+              <label for="Premium-Economy">Premium Economy</label>
+              <input
+                type="radio"
+                id="Business"
+                name="aeroplaneClass"
+                value="Business"
+              />
+              <label for="Business">Business</label>
+            </section>
+            <section id="train-class">
+              <input
+                type="radio"
+                id="SleeperClass"
+                name="trainClass"
+                value="Sleeper Class"
+                checked
+              />
+              <label for="SleeperClass">Sleeper Class</label>
+              <input
+                type="radio"
+                id="ThirdAC"
+                name="trainClass"
+                value="Third AC"
+              />
+              <label for="ThirdAC">Third AC</label>
+              <input
+                type="radio"
+                id="SecondAC"
+                name="trainClass"
+                value="Second AC"
+              />
+              <label for="SecondAC">Second AC</label>
+              <input
+                type="radio"
+                id="FirstAC"
+                name="trainClass"
+                value="First AC"
+              />
+              <label for="FirstAC">First AC</label>
+            </section>
+          </span>
+        </div>
+        <button type="button" id="btn-search" onclick="search()">SEARCH</button>
+      </div>
+      <div id="search-details">
+        <ul id="searchList"></ul>
+      </div>
+
+      <h1 style="text-align: center" id="themeHeading">Explore By Theme</h1>
+      <br /><br />
+      <div id="themeContainer">
+        <img id="solo" onclick="demo()" src="solo.jpg" />
+        <img id="fam" onclick="demo1()" src="fam.jpg" />
+        <img id="friend" onclick="demo2()" src="friend.jpg" />
+      </div>
+      <br /><br /><br />
+      <div id="theme">
+        <div>
+          <img
+            id="img1"
+            style="width: 400px; height: 300px"
+            ;
+            src="kerala.jpg"
+          />
+          <p id="desc1">
+            KERALA:-The tranquil beauty of Kerala has helped it to be named as
+            one of the ‘10 paradises of the world’ and one of the 50 must see
+            destinations of a lifetime by the National Geographic's Traveller
+            magazine. Kerala, the state also offers exotic beaches, lush
+            hill-stations, spectacular waterfalls, wilderness to explore, many
+            sanctuaries, ancient ports, and greenery everywhere. The state is
+            known for its hospitality and if you are currently in search of your
+            next travel destination here is the one calling you. Get ready to
+            explore the tranquil beauty through Kerala Holidays.
+          </p>
+        </div>
+        <div>
+          <img
+            id="img2"
+            style="width: 400px; height: 300px"
+            ;
+            src="Himachal.jpg"
+          />
+          <p id="desc2">
+            HIMACHAL:-This is popularly renowned for its Himalayan landscapes
+            and popular hill-stations. Many outdoor activities such as rock
+            climbing, mountain biking, paragliding, ice-skating, trekking,
+            rafting, and heli-skiing are popular tourist attractions in Himachal
+            Pradesh.Get ready to explore the tranquil beauty through himachal
+            pradesh holidays.
+          </p>
+        </div>
+        <div>
+          <img
+            id="img3"
+            style="width: 400px; height: 300px"
+            ;
+            src="delhi.jpg"
+          />
+          <p id="desc3">
+            DELHI:-It is famous for its heritage sites, featuring UNESCO
+            Heritage sites like Red Fort, Humayun's Tomb, Jama Masjid and Qutub
+            Minar. Some of the other popular tourist destinations in Delhi are
+            Old Fort, the famous ISKCON temple - a famous Hindu spiritual
+            destination and Akshardham.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="aboutdiv">
+      <div>
+        <a href="#"
+          ><img id="twitter" src="twitter.png" alt="twitter link"
+        /></a>
+        <a href="#"
+          ><img id="facebook" src="facebook.jpg" alt="facebook link"
+        /></a>
+      </div>
+      <div id="company">
+        &copy; 2021 WAVE THE WORLD PVT. LTD.
+        <br />
+        Country - India
+      </div>
+    </footer>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

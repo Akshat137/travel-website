@@ -1,0 +1,85 @@
+[
+  {
+    "from": "Bangalore, India",
+    "to": "Delhi, India",
+    "date": "2021-12-07",
+    "aeroplaneClass": "Premium Economy",
+    "company": "IndiGo",
+    "price": "7488",
+    "from_time": "04:40",
+    "to_time": "07:35"
+  },
+  {
+    "from": "Bangalore, India",
+    "to": "Delhi, India",
+    "date": "2021-12-07",
+    "aeroplaneClass": "Premium Economy",
+    "company": "IndiGo",
+    "price": "7488",
+    "from_time": "19:15",
+    "to_time": "22:10"
+  },
+  {
+    "from": "Delhi, India",
+    "to": "Mumbai, India",
+    "date": "2021-12-07",
+    "aeroplaneClass": "Economy",
+    "company": "IndiGo",
+    "price": "5955",
+    "from_time": "21:15",
+    "to_time": "23:30"
+  },
+  {
+    "from": "Delhi, India",
+    "to": "Kolkata, India",
+    "date": "2021-12-08",
+    "aeroplaneClass": "Business",
+    "company": "IndiGo",
+    "price": "28,510",
+    "from_time": "15:30",
+    "to_time": "18:00"
+  },
+  {
+    "from": "Mumbai, India",
+    "to": "Dehradun, India",
+    "date": "2021-12-08",
+    "aeroplaneClass": "Business",
+    "company": "IndiGo",
+    "price": "35,244",
+    "from_time": "12:10",
+    "to_time": "14:20"
+  },
+  {
+    "from": "Delhi, India",
+    "to": "Mumbai, India",
+    "date": "2021-12-07",
+    "trainClass": "Sleeper Class",
+    "trainName": "JHELUM EXPRESS",
+    "price": "&#8377; 585",
+    "status": "WL 99",
+    "from_time": "11:30",
+    "to_time": "15:55"
+  },
+  {
+    "city": "Delhi, India",
+    "checkin": "2021-12-07",
+    "checkout": "2021-12-09",
+    "hotelName": "Welcomhotel by ITC Hotels, Dwarka, New Delhi",
+    "hotelAddress": "Sector 10 Dwarka",
+    "hotelBreakfast": "at",
+    "originalPrice": "&#8377; 9,350",
+    "discountPrice": "&#8377; 5,500"
+  },
+  {
+    "from": "Mumbai, India",
+    "to": "Pune, India",
+    "date": "2021-12-07",
+    "busProvider": "zingbus",
+    "rating": "4.5",
+    "busName": "Bharat Benz Full Air Suspension AC Sleeper",
+    "busSeats": "21",
+    "price": "&#8377; 272",
+    "from_time": "20:10",
+    "to_time": "22:15"
+  }
+]
